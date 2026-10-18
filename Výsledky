@@ -1,0 +1,40 @@
+Populacia 50, elitizmus 10 %, krizenie 100 %, poradova selekcia.
+Kazda funkcia: 10D, 10 000 ohodnoteni, 10 behov.
+Minimalizacia - mensia hodnota je lepsia.
+Std = populacna smerodajna odchylka (ddof=0).
+
+Sphere
+Nastavenie                        Best        Worst         Mean       Median          Std
+IEEE 754                     1.814e-78    6.036e-76   1.2089e-76   2.5729e-77    1.845e-76
+Fixed point                 5.3965e-07   1.9555e-05   6.3028e-06   3.9757e-06   5.8498e-06
+BCD                          1.076e-05   0.00057426   0.00020166     0.000183   0.00018867
+Normal s=1% p=0.1           2.2334e-05   7.7379e-05   4.9819e-05   4.6822e-05   1.9421e-05
+Normal s=1% p=0.5             0.002216    0.0067534     0.004827    0.0050628     0.001287
+Normal s=10% p=0.1          0.00036735    0.0034195     0.001597    0.0013812   0.00093329
+Normal s=10% p=0.5             0.29528      0.71244      0.48855       0.4953      0.14946
+Uniform p=0.1                0.0015959     0.031256     0.017877       0.0169     0.008771
+Najlepsie z testovanych: IEEE 754 (priemer 1.2089e-76).
+
+Rosenbrock
+Nastavenie                        Best        Worst         Mean       Median          Std
+IEEE 754                          8.61       182.97       69.135        8.952        74.47
+Fixed point                     70.304       643.68       247.33       117.49       203.35
+BCD                             8.4832       340.33       127.21       82.875       116.95
+Normal s=1% p=0.1              0.39207       217.74       59.692       7.4612       75.861
+Normal s=1% p=0.5                  6.3       164.28       45.999       9.1721       59.066
+Normal s=10% p=0.1              2.0882        32.09       9.6459       6.8571       9.1206
+Normal s=10% p=0.5              54.138       207.81       121.05        111.3       51.492
+Uniform p=0.1                   10.102       105.56       44.815       36.705       32.987
+Najlepsie z testovanych: Normal s=10% p=0.1 (priemer 9.6459).
+
+Schwefel
+Nastavenie                        Best        Worst         Mean       Median          Std
+IEEE 754                        362.59       1212.4       654.76       681.66       239.12
+Fixed point                     247.79       779.61       495.52       467.84       155.26
+BCD                             358.02       1060.1       764.93        753.1       210.42
+Normal s=1% p=0.1               118.45       1264.9       550.93       562.63       315.13
+Normal s=1% p=0.5                120.6       854.32       466.22       457.73       183.23
+Normal s=10% p=0.1             0.78824       477.05       309.75       297.56       161.12
+Normal s=10% p=0.5              580.39       1165.9        925.5       909.53       185.07
+Uniform p=0.1                   5.3932       30.247       18.221       18.764       7.0429
+Najlepsie z testovanych: Uniform p=0.1 (priemer 18.221).
