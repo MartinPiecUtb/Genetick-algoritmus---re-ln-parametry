@@ -1,0 +1,4 @@
+Pri funkcii Sphere vyšlo najlepšie IEEE 754, ktoré dosiahlo hodnoty prakticky rovné nule. Čo umožňuje vytvárať veľmi malé čísla, a to je výhodné, pretože optimum tejto funkcie je práve v nule.
+Pri funkcii Rosenbrock mala najlepší priemer normálna mutácia so sigmou 10 % a pravdepodobnosťou 0,1. Toto nastavenie umožňovalo väčšie zmeny, ale nemenilo príliš veľa súradníc naraz, čím sa menej narúšali dobré riešenia.
+Pri funkcii Schwefel bola najlepšia náhodná mutácia z celého rozsahu. Táto funkcia má veľa lokálnych miním a väčšie náhodné skoky pomáhali algoritmu dostať sa z nich. Výsledky tejto varianty boli zároveň najvyrovnanejšie medzi behmi.
+Z porovnania vyplýva, že žiadna varianta nebola najlepšia pre všetky tri funkcie. Vhodná reprezentácia a mutácia závisia od riešeného problému.
